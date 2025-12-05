@@ -13,8 +13,12 @@ public class User {
     private Long id;
     private String name;
     private String email;
+    private String password; 
+    private String apellido; 
+    private String phone;   
+    private String codigoPromocional;
+    private boolean mayorDe50;
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -37,5 +41,45 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getCodigoPromocional() {
+        return codigoPromocional;
+    }
+
+    public void setCodigoPromocional(String codigoPromocional) {
+        this.codigoPromocional = codigoPromocional;
+    }
+
+    public boolean isMayorDe50() {
+        return mayorDe50;
+    }
+
+    public void setMayorDe50(boolean mayorDe50) {
+        this.mayorDe50 = mayorDe50;
     }
 }

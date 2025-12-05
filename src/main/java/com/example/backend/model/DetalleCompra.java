@@ -44,8 +44,8 @@ public class DetalleCompra {
         return product;
     }
 
-    public void setProducto(Product producto) {
-        this.product = producto;
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public Integer getCantidad() {

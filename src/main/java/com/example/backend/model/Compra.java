@@ -1,6 +1,7 @@
 package com.example.backend.model;
 
 import jakarta.persistence.*;
+
 import java.util.List;
 
 @Entity
@@ -15,12 +16,11 @@ public class Compra {
     @JoinColumn(name = "usuario_id", nullable = false)
     private User usuario;
 
-    private Double total;
-
-    private Double descuento;
+    private Double total; 
+    private Double descuento; 
 
     @OneToMany(mappedBy = "compra", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<DetalleCompra> detalles;
+    private List<DetalleCompra> detallesCompra; 
 
     public Compra() {
     }
@@ -63,11 +63,11 @@ public class Compra {
         this.descuento = descuento;
     }
 
-    public List<DetalleCompra> getDetalles() {
-        return detalles;
+    public List<DetalleCompra> getDetallesCompra() {
+        return detallesCompra;
     }
 
-    public void setDetalles(List<DetalleCompra> detalles) {
-        this.detalles = detalles;
+    public void setDetallesCompra(List<DetalleCompra> detallesCompra) {
+        this.detallesCompra = detallesCompra;
     }
 }

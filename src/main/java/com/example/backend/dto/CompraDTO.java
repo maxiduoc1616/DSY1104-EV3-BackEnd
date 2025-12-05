@@ -2,13 +2,11 @@ package com.example.backend.dto;
 
 import java.util.List;
 
-public class CompraCompraDTO {
+public class CompraDTO {
     private Long usuarioId;
     private Double total;
     private Double descuento;
     private List<DetalleCompraDTO> detalles;
-
-    // Getters y Setters
     public Long getUsuarioId() {
         return usuarioId;
     }
